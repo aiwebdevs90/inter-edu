@@ -56,6 +56,37 @@ body {
     border: 1px solid black !important;
 }
 
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* The button within the carousel */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Height for the carousel */
+.carousel-item {
+  height: 40rem;
+  background-color: #777;
+}
+
+/* Carousel image */
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+}
+
+.btn-carousel {
+  background-color: #ffffff;
+  color: #000;
+}
+
 /*------------------------------- Media Queries */
 
 /* Slightly larger container on x1 screens */
@@ -76,6 +107,6 @@ body {
     }
     
     .header-container {
-        padding-top: 164px;
+        padding-top: 16px;
     }
 }

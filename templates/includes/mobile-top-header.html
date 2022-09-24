@@ -1,0 +1,22 @@
+<ul class="mobile-sm-nav">
+    <li class="list-inline-item mx-2">
+        <!-- Navigation for mobile view -->
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-options" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center account-dropdown-mobile">
+                <i class="fas fa-user fa-lg"></i>
+                <p class="mb-0">Account &nbsp;<i class="fas fa-angle-down align-baseline"
+                        id="accMobileDropdownIcon"></i></p>
+            </div>
+        </a>
+        <!-- The search form is displayed as drop down menu for space utilisation and it will search in the product page -->
+        <div class="dropdown-menu border-1 w-100 p-2 rounded-0 my-0" aria-labelledby="mobile-options">
+            <div class="input-a input-group">
+                <!-- Input append group which makes the search icon (https://fontawesome.com/v5.15/icons/search?style=solid) appear on the right-->
+                <div class="input-group text-center">
+                    {% include 'includes/main-dropdown.html' %}
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

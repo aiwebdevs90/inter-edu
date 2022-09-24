@@ -1,0 +1,26 @@
+<div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
+    <ul class="nav justify-content-end list-inline list-unstyled my-0">
+        <!-- drop down to display 'My Account Information' -->
+        <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="desktop-options" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="text-center account-dropdown">
+                    {% if request.user.is_authenticated %}
+                    <p class="mb-0">{{ request.user }} Account &nbsp;<i class="fas fa-angle-down align-baseline"
+                            id="accDropdownIcon"></i></p>
+                    {% else %}
+                    <p class="mb-0">My Account &nbsp;<i class="fas fa-angle-down align-baseline"
+                            id="accDropdownIcon"></i></p>
+                    {% endif %}
+                </div>
+            </a>
+            <!-- Drop Down options for the navigation -->
+            <div class="dropdown-menu border-1" aria-labelledby="desktop-options">
+                {% include 'includes/main-dropdown.html' %}
+            </div>
+        </li>
+        <li>about us</li>
+        <li>consultation</li>
+        <!-- Placeholder for the shopping basket -->
+    </ul>
+</div>
