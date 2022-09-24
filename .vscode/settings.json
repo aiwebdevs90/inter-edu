@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.letterSpacing": 1,
+    "terminal.integrated.fontWeightBold": "bold",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.copyOnSelection": true
+}
