@@ -87,6 +87,9 @@ body {
   color: #000;
 }
 
+.bg-black {
+    background: #000 !important;
+}
 /*------------------------------- Media Queries */
 
 /* Slightly larger container on x1 screens */
