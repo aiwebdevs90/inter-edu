@@ -2,28 +2,28 @@
 <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
     <ul class="nav justify-content-end list-inline list-unstyled my-0">
         <li class="nav-item">
-            <a class="nav-link contentEnglish" href="#">About Us</a>
-            <a class="nav-link contentArabic" href="#">سشيبشسي</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link contentEnglish" href="#">Consultation</a>
-            <a class="nav-link contentArabic" href="#">اقثثقل</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link contentEnglish" href="#">Process</a>
-            <a class="nav-link contentArabic" href="#">سيسذشسدش</a>
+            <a class="nav-link contentEnglish" href="{% url 'contact' %}">Contact us</a>
+            <a class="nav-link contentArabic" href="{% url 'contact' %}">يسشبش</a>
         </li>
         <li class="nav-item">
             <a class="nav-link contentEnglish" href="#">Testimonials</a>
             <a class="nav-link contentArabic" href="#">شثقببسي</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link contentEnglish" href="#">Contact us</a>
-            <a class="nav-link contentArabic" href="#">يسشبش</a>
+            <a class="nav-link contentEnglish" href="{% url 'consultation' %}">Consultation</a>
+            <a class="nav-link contentArabic" href="{% url 'consultation' %}">اقثثقل</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link contentEnglish" href="{% url 'process' %}">Process</a>
+            <a class="nav-link contentArabic" href="{% url 'process' %}">سيسذشسدش</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link contentEnglish" href="{% url 'about' %}">About Us</a>
+            <a class=" nav-link contentArabic" href="{% url 'about' %}">سشيبشسي</a>
         </li>
 
         <!-- drop down to display 'My Account Information' -->
-        <li class="list-inline-item dropdown">
+        <li class=" list-inline-item dropdown">
             <a class="text-black nav-link" href="#" id="desktop-options" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <div class="text-center account-dropdown">
