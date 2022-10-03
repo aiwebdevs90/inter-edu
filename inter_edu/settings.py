@@ -43,12 +43,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
-
-    # Other
-    # Crispy forms for bootstrap5 was assisted
-    # From (https://github.com/django-crispy-forms/crispy-bootstrap5)
-    'crispy_forms',
-
 ]
 
 MIDDLEWARE = [
