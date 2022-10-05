@@ -109,35 +109,22 @@
 
     {% block postloadjs %}
     <script>
-        console.log($(this));
-        console.log($(this).is(':input'));
-        console.log($(this).is(':checked'));
-        console.log(localStorage);
-
+        console.log(localStorage.input);
 
         //To show and hide between english and arabic
         $(document).ready(function () {
-            $(".switch input").on("change", function (e) {
+            $("#switch input").on("change", function (e) {
                 const isOn = e.currentTarget.checked;
                 if (isOn) {
                     $(".contentArabic").show();
                     $(".contentEnglish").hide();
+                    console.log(isOn)
                 } else {
                     $(".contentEnglish").show();
                     $(".contentArabic").hide();
+                    console.log(isOn)
                 }
             });
-        });
-
-        $(function () {
-            var languageSwitch = localStorage.input === 'true' ? true : false;
-            $('.switch input').prop('checked', languageSwitch || false);
-        });
-
-        $('.switch input').on('change', function () {
-            localStorage.input = $(this).is(':checked');
-            console.log($(this).is(':checked'));
-            console.log(localStorage);
         });
     </script>
     {% endblock %}
