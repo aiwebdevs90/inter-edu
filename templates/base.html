@@ -65,7 +65,8 @@
             <div class="col-auto">
                 <nav class="navbar navbar-light w-100 languages">
                     <span class="en me-2">English</span>
-                    <label class="switch"><input type="checkbox"><span class="slider round hide-off"></a></span></label>
+                    <label class="switch" id="switch"><input type="checkbox"><span
+                            class="slider round hide-off"></span></label>
                     <span class="ar ms-2">Arabic</span>
                 </nav>
             </div>
@@ -108,6 +109,12 @@
 
     {% block postloadjs %}
     <script>
+        console.log($(this));
+        console.log($(this).is(':input'));
+        console.log($(this).is(':checked'));
+        console.log(localStorage);
+
+
         //To show and hide between english and arabic
         $(document).ready(function () {
             $(".switch input").on("change", function (e) {
@@ -120,6 +127,17 @@
                     $(".contentArabic").hide();
                 }
             });
+        });
+
+        $(function () {
+            var languageSwitch = localStorage.input === 'true' ? true : false;
+            $('.switch input').prop('checked', languageSwitch || false);
+        });
+
+        $('.switch input').on('change', function () {
+            localStorage.input = $(this).is(':checked');
+            console.log($(this).is(':checked'));
+            console.log(localStorage);
         });
     </script>
     {% endblock %}
